@@ -1,0 +1,9 @@
+Considérez les besoins suivants :
+
+Passer une commande (parfois urgente).
+Authentifier.
+Expédier une commande.
+Passer une commande urgente est un cas particulier de passer une commande. Pour passer une commande, il faut nécessairement authentifier l'utilisateur.
+
+Codez le diagramme de cas d'utilisation associé en y ajoutant un acteur principal.
+

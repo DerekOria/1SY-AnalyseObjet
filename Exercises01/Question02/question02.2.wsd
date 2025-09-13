@@ -1,0 +1,27 @@
+@startuml question02.2
+
+left to right direction 
+
+Actor Utilisateur 
+Actor Expediteur
+
+rectangle "Shamazon"{
+
+    usecase "Passer une commande" as UC1
+    usecase "Authentifier" as UC2
+    usecase "Expedier une commande" as UC3
+    usecase "Passer commande urgent" as UC4
+}
+
+Utilisateur -- UC1 
+(UC4) .> (UC1) : extends
+(UC1) .> (UC2) : include
+
+
+Expediteur -- UC3 
+
+
+
+
+
+@enduml

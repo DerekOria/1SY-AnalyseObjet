@@ -1,0 +1,23 @@
+@startuml
+
+skinparam sequenceMessageAlign right
+
+actor Employé #Green
+control QASystem
+entity Scanner3D
+database DB
+
+Employé-> QASystem: Demande Authentification
+QASystem-->Employé: Reponse Authentification
+Employé-> QASystem: Demande une inspection
+QASystem->Scanner3D: Inspection de la piece
+Scanner3D-->QASystem: Procedure de non conformite
+QASystem->Scanner3D: Re demande d'inspection de la piece
+Scanner3D-->QASystem: Piece conforme
+QASystem-->Employé: Fournir numero de serie
+Employé->DB: Ajout de piece dans l'inventaire
+
+
+
+
+@enduml

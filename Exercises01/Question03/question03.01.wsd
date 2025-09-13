@@ -1,0 +1,65 @@
+@startuml
+
+left to right direction
+
+Actor Client
+Actor Caissier
+Actor Responsable
+
+rectangle "Alkatrak"{
+
+    usecase "Arriver à la caisse avec des articles" as UC1
+    usecase "Enregistrer le numero d'identification" as UC2
+    usecase "Enregistrer la quantite s'il est > 1" as UC3
+    
+    usecase "Afficher le prix de chaque article et libelle" as UC4
+    
+    usecase "Signaler la fin de la vente" as UC5
+    usecase "Affiche le total des achats sur la caisse " as UC6
+    usecase "Choisir mode paiement" as UC7
+    usecase "Liquide" as UC8
+    usecase "Cheque" as UC9
+    usecase "Carte de credit" as UC10
+
+    usecase "Enregistre la vente" as UC11
+    usecase "Trasnmet le ticket au client" as UC12
+
+    usecase "Presenter des coupons de reductions" as UC13
+    usecase "Transmet les informations des articles vendus au systeme" as UC14
+
+    usecase "Initialise les caisses pour la journee" as UC15
+
+    usecase "Le paiement est effectue" as UC16
+}
+
+Client -- UC1
+Caissier -- UC2
+(UC2) .> (UC3) : extends
+UC2 -- UC4 
+UC4 -- UC5
+UC5 -- UC6
+UC6 -- UC11
+(UC6) <. (UC7) : include
+
+UC1 -- UC7
+
+
+
+(UC8) .> (UC7) : extends
+(UC9) .> (UC7) : extends
+(UC10) .> (UC7) : extends
+UC7 -- UC16 
+(UC16) .> (UC11) : include
+UC11 -- UC12
+
+(UC13) .> (UC7) : extends
+
+(UC14) <. (UC16) : include
+
+
+
+Responsable -- UC15
+
+
+
+@enduml

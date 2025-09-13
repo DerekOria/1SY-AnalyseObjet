@@ -1,0 +1,21 @@
+@startuml ex1
+
+left to right direction
+
+Actor James
+Actor Client
+
+
+rectangle "Station d'essence"{
+    usecase "Servir de l'essence" as UC1
+    usecase "Remplir les reservoirs des pompes" as UC2
+    
+}
+
+Client -- UC1
+
+James -- UC2
+
+
+@enduml
+

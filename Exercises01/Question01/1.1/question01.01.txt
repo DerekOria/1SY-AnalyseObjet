@@ -1,0 +1,11 @@
+Question 01 - James le pompiste
+
+Considérons une station-service de distribution d'essence. 
+Les clients se servent de l'essence et le camionneur-pompiste 
+remplit les cuves.
+
+Le client se sert de l'essence de la façon suivante : 
+il prend un pistolet accroché à une pompe et appuie sur la gâchette pour prendre de l'essence. 
+Qui est l'acteur du système ? Est-ce le client, le pistolet ou la gâchette et pourquoi ?
+
+Reponse : L'acteur du systeme est le client parce que c'est lui qui fais les actions

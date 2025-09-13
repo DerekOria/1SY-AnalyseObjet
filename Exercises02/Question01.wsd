@@ -1,0 +1,31 @@
+@startuml
+
+skinparam sequenceMessageAlign right
+
+actor Etudiant #orange
+entity Application 
+control Serveur
+control SAP 
+database BaseDeDonnees
+
+
+Etudiant->Application: Demande les notes 
+Application-->Etudiant: Reponse Authentification 
+
+Application->Serveur: Envoie la requete au serveur
+Serveur->SAP: Relance la requete 
+SAP-->Serveur:Authentification confirme
+Serveur-->Application: Renvoie confirmation d'authentification
+Application->Serveur: Demande les notes de l'etudiant
+Serveur->BaseDeDonnees: Consulte les notes
+BaseDeDonnees-->Serveur: Retourne les notes
+Serveur-->Application: Retourne les notes
+
+
+
+
+
+
+
+
+@enduml

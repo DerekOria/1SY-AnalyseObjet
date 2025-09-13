@@ -1,0 +1,16 @@
+@startuml
+
+ object Noeud { 
+    
+ }
+
+ object Fichier {
+    byte[]
+ }
+
+ object Repertoire { 
+    nom : string
+ }
+
+   
+@enduml

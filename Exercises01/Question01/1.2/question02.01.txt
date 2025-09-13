@@ -1,0 +1,5 @@
+James, dont le métier est pompiste, peut se servir de l'essence pour sa voiture. 
+Pour modéliser cette activité de James, doit-on définir un nouvel acteur ? 
+
+Reponse : Non, on doit pas definir un nouvel acteur parce qu'il peut attribuer
+les memes actions du client. 

@@ -1,0 +1,27 @@
+@startuml
+
+
+object Membre {
+    nom    
+    alias 
+}
+
+object CSBuddy {
+
+}
+
+object Group {
+
+}
+
+object Amigos { 
+
+}
+
+
+Membre "1" --o "1..*" CSBuddy
+Membre "0..*" -- "3..*" Group 
+Membre -- "1..50k" Amigos : communique
+
+ 
+@enduml

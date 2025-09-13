@@ -1,0 +1,18 @@
+@startuml ex1
+
+left to right direction
+
+Actor James
+
+
+
+rectangle "Station d'essence"{
+    usecase "Servir de l'essence" as UC1
+}
+
+James -- UC1
+
+
+
+@enduml
+

@@ -1,0 +1,14 @@
+Programmez le diagramme de cas d'utilisation du système Alkatrak de vente suitant :
+
+Un client arrive à la caisse avec des articles.
+Le caissier enregistre le numéro d'identification de chaque article, ainsi que la quantité si celle-ci est supérieure à 1.
+La caisse affiche le prix de chaque article et son libellé.
+Lorsque tous les articles ont été enregistrés, le caissier signale la fin de la vente.
+La caisse affiche le total des achats.
+Le client choisit son mode de paiement :
+Liquide : le caissier encaisse l'argent et la caisse indique le montant éventuel à rendre au client.
+Chèque : le caissier note l'identité du client et la caisse enregistre le montant sur le chèque.
+Carte de crédit : un terminal bancaire fait partie de la caisse, il transmet la demande à un centre d'autorisation multi-banques.
+La caisse enregistre la vente et imprime un ticket.
+Le caissier transmet le ticket imprimé au client.
+Un client peut présenter des coupons de réduction avant le paiement. Lorsque le paiement est terminé, la caisse transmet les informations relatives aux articles vendus au système de gestion des stocks. Tous les matins, le responsable du magasin initialise les caisses pour la journée.

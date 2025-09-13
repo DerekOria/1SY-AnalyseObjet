@@ -1,0 +1,23 @@
+@startuml ex1
+
+left to right direction
+
+Actor Pompiste
+Actor Client
+Actor Reparateur
+
+rectangle "Station d'essence"{
+    usecase "Servir de l'essence" as UC1
+    usecase "Remplir les reservoirs des pompes" as UC2
+    usecase "Operer des operations de maintenance" as UC3
+
+}
+
+Client -- UC1
+
+Pompiste -- UC2
+Reparateur -- UC3
+Reparateur ->  Pompiste
+
+@enduml
+

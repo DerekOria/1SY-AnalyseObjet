@@ -1,0 +1,28 @@
+@startuml
+
+left to right direction 
+
+object Personne {
+    nom
+} 
+
+object Appartement {
+    adresse
+} 
+
+object Bail {
+    date 
+    renouveller()
+} 
+
+Personne "1..*" -- "0..*" Appartement
+(Personne, Appartement) -- Bail : signe
+
+
+
+
+
+
+
+
+@enduml

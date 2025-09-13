@@ -1,0 +1,5 @@
+Lorsque James vient avec son camion-citerne pour remplir les réservoirs des pompes, 
+est-il considéré comme un nouvel acteur ? Comment modélise-t-on cela ?
+
+Reponse : Non, il n'est pas considere comme un nouvel acteur, 
+il faut juste lui ajouter une nouvelle tache.
